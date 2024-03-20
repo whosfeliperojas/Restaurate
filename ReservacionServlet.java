@@ -18,7 +18,7 @@ public class ReservacionServlet extends HttpServlet {
         try {
             // Establecer la conexión con la base de datos
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurante", "root", "FrankyBelita");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Restaurante", "usuariodecadauno", "lacontraseñadecadauno");
 
             // Preparar la consulta SQL
             String sql = "INSERT INTO reservaciones (nombre, email, fecha, personas) VALUES (?, ?, ?, ?)";
