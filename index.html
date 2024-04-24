@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="#{titulo.pagina}">Restaurante Belita Pulgosa</title>
+    <link rel="stylesheet" th:href="@{/estilos.css}">
+</head>
+<body>
+<header>
+    <h1>Restaurante Belita Pulgosa</h1>
+    <nav>
+        <ul>
+            <li><a th:href="@{/index}">Sobre Nosotros</a></li>
+            <li><a th:href="@{/menus}">Menú</a></li>
+            <li><a th:href="@{/reservacion}">Reservaciones</a></li>
+            <li><a th:href="@{/eventos}">Eventos Especiales</a></li>
+            <li><a th:href="@{/galeria}">Galería</a></li>
+            <li><a th:href="@{/pedidosOnline}">Pedidos Online</a></li>
+            <li><a th:href="@{/contacto}">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <h2>Sobre Nosotros</h2>
+    <p >Somos un restaurante dedicado a ofrecerte la mejor experiencia gastronómica. Con ingredientes frescos y recetas tradicionales, llevamos el sabor auténtico a tu mesa.</p>
+</section>
+<footer>
+    <p>&copy; 2024 Restaurante Belita Pulgosa</p>
+</footer>
+</body>
+</html>
